@@ -16,4 +16,96 @@ a {
 body{
     font-size: 14px;
     color: #222;
+    margin-left: 120px;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    margin-bottom: 10px;
+    margin-top: 35px;
+    background-color: gainsboro;
+}
+
+.header .logo {
+    font-size: 32px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.header .nav {
+    display: flex;
+    font-size: 24px;
+    margin-right: 20px;
+}
+
+.header .nav li a {
+    background-color: goldenrod;
+    padding: 30px;
+}
+
+.slider {
+    margin-bottom: 10px;
+}
+
+.contents {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 10px;
+}
+
+
+.contents .tab_title {
+    display: flex;
+    width: 385px;
+    height: 50px;
+    gap: 5px;
+    border-bottom: #ff6448 solid 2px;
+}
+
+.contents .tab_title h3 {
+    background-color: #ff6448;
+    color: #ffe6b5;
+    width: 190px;
+}
+
+.contents .tab_title h3.outline {
+    background-color: #eee;
+    color: #222;
+}
+
+
+.banner {
+}
+
+.links {
+    flex-wrap: wrap;
+    display: flex;
+    gap: 10px;
+}
+
+.links li {
+    width: 185px;
+    background-color: #d9d9d9;
+    border-radius: 10px;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    background-color: #eee;
+}
+
+.footer_logo {
+    margin-right: auto;
+}
+
+.copyright {
+    margin-right: auto;
 }
