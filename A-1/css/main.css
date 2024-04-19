@@ -1,7 +1,7 @@
 *{
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
 
 ul {
@@ -25,10 +25,9 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 100px;
-    margin-bottom: 10px;
+    /* height: 100px; */
     margin-top: 35px;
-    background-color: gainsboro;
+    border-bottom: 1px solid #002866;
 }
 
 .header .logo {
@@ -44,68 +43,129 @@ body{
 }
 
 .header .nav li a {
-    background-color: goldenrod;
-    padding: 30px;
+    display: block;
+    /* padding: 32px; */
+    height: 100px;
+    padding: 0 40px;
+    line-height: 100px;
+
+}
+
+.nav li a:hover {
+    color: orange;
 }
 
 .slider {
-    margin-bottom: 10px;
 }
 
 .contents {
     display: flex;
-    gap: 25px;
-    margin-bottom: 10px;
+    gap: 20px;
+    padding: 10px 0;
+    height: 180px;
 }
 
+.tab {
+    flex: 1;
+}
 
 .contents .tab_title {
     display: flex;
     width: 385px;
-    height: 50px;
+    height: 51px;
     gap: 5px;
-    border-bottom: #ff6448 solid 2px;
+    border-bottom: #ff6448 solid 3px;
+    cursor: pointer;
+    margin-bottom: 10px;
 }
 
 .contents .tab_title h3 {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #ff6448;
-    color: #ffe6b5;
-    width: 190px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: normal;
 }
 
-.contents .tab_title h3.outline {
+.contents .tab_title h3.dim {
     background-color: #eee;
     color: #222;
 }
 
+.contents .tab_contents li{
+    margin-bottom: 10px;
+}
+
+.contents .tab_contents li a:hover {
+    text-decoration: underline;
+}
+
+
+.contents .tab_contents li i { 
+    color: #ff6448;
+}
 
 .banner {
+    flex: 1;
 }
 
 .links {
     flex-wrap: wrap;
     display: flex;
-    gap: 10px;
+    gap: 10px 16px;
+    flex: 1;
 }
 
-.links li {
+.links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 185px;
+    height: 85px;
     background-color: #d9d9d9;
     border-radius: 10px;
+    gap: 5px;
+    font-size: 18px;
+}
+
+.links a i {
+    font-size: 20px;
 }
 
 .footer {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     height: 100px;
     background-color: #eee;
+    padding: 0 20px;
 }
 
 .footer_logo {
-    margin-right: auto;
+    font-weight: bold;
+    font-size: 22px;
+    color: #666;
 }
 
 .copyright {
-    margin-right: auto;
 }
+
+.sns {
+    display: flex;
+    gap: 24px;
+}
+
+.sns a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.sns a i {
+    font-size: 20px;
+}
+
+
