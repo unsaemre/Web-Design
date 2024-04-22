@@ -57,6 +57,7 @@ body { color: #333; background-color: #fff; }
 .slider {
     height: 300px;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .slide {
@@ -174,6 +175,10 @@ body { color: #333; background-color: #fff; }
 .footer .sns {
     display: flex;
     gap: 15px;
+}
+
+.sns img {
+    border-radius: 15%
 }
 
 .modal {
